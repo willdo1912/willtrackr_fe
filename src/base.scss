@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  // Background color
+  .base-bg-teal {
+    @apply bg-main-teal dark:bg-main-dark-teal;
+  }
+
+  .base-bg-blue {
+    @apply bg-main-blue dark:bg-main-dark-blue;
+  }
+
+  .base-bg-pink {
+    @apply bg-main-pink dark:bg-main-dark-pink;
+  }
+
+  .base-bg-normal {
+    @apply bg-white dark:bg-slate-900;
+  }
+
+  .base-bg-off {
+    @apply bg-slate-200 dark:bg-slate-700;
+  }
+
+  .base-bg-inverted {
+    @apply bg-slate-900 dark:bg-white;
+  }
+
+  .base-bg-off-inverted {
+    @apply bg-slate-700 dark:bg-slate-200;
+  }
+
+  // Text color
+  .base-text-teal {
+    @apply text-main-dark-teal dark:text-main-teal;
+  }
+
+  .base-text-blue {
+    @apply text-main-dark-blue dark:text-main-blue;
+  }
+
+  .base-text-pink {
+    @apply text-main-dark-pink dark:text-main-pink;
+  }
+
+  .base-text-normal {
+    @apply text-slate-900 dark:text-white;
+  }
+
+  .base-text-off {
+    @apply text-slate-700 dark:text-slate-200;
+  }
+
+  .base-text-inverted {
+    @apply text-white dark:text-slate-900;
+  }
+
+  .base-text-off-inverted {
+    @apply text-slate-200 dark:text-slate-700;
+  }
+
+  // Shadow
+  .custom-shadow-outer {
+    @apply shadow-main-outer dark:shadow-main-outer-inverted;
+  }
+
+  .custom-shadow-inner {
+    @apply shadow-main-inner dark:shadow-main-inner-inverted;
+  }
+
+  // Custom Text Size (applied in index.scss)
+  .text-body {
+    @apply font-inter text-sm font-normal tracking-normal lg:text-base;
+  }
+
+  .text-label {
+    @apply font-inter text-xs font-light tracking-wider lg:text-sm;
+  }
+}

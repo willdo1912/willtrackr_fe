@@ -1,0 +1,29 @@
+@import '/src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .carousel-btn {
+    @apply z-10 h-full w-10 rounded-none p-1 text-center text-white opacity-75 transition-all duration-300 ease-in-out hover:bg-main-blue/75 hover:opacity-100 disabled:cursor-not-allowed disabled:opacity-25 dark:bg-main-dark-blue/75;
+  }
+
+  .carousel-container {
+    @extend .base-bg-teal;
+    @apply relative z-0 flex gap-2 overflow-hidden scroll-smooth p-4;
+  }
+
+  .carousel-item {
+    @extend .custom-shadow-outer;
+    @apply relative inline-flex size-32 md:size-64;
+  }
+
+  .carousel-image {
+    @apply aspect-square h-full w-full rounded bg-cover bg-left-top bg-no-repeat;
+  }
+
+  .carousel-overlay {
+    @apply absolute z-10 aspect-square h-full w-full rounded bg-main-blue/75 opacity-0 transition-opacity duration-300 hover:opacity-100 dark:bg-main-dark-blue/75;
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "image": "https://picsum.photos/id/100/300/300",
+    "reversed": false,
+    "heading": "Health Quiz Management",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+  },
+  {
+    "id": 1,
+    "image": "https://picsum.photos/id/200/300/300",
+    "reversed": true,
+    "heading": "Activity Recommendation",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/id/300/300/300",
+    "reversed": false,
+    "heading": "Product Suggestion",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/id/400/300/300",
+    "reversed": true,
+    "heading": "Artificial Intelligence",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+  }
+]

@@ -1,0 +1,15 @@
+@import '/src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .pattern-bg {
+    @apply h-full bg-[url('./background/pattern.jpg')] bg-contain;
+  }
+
+  .object-bg {
+    @apply flex h-full flex-col items-center justify-center gap-8 bg-[url('./background/bg-grey.png')] bg-cover bg-center bg-no-repeat py-16 lg:bg-contain;
+  }
+}

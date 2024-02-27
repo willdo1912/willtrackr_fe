@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    "heading": "Artificial Intelligence",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla et vehicula dolor, sit amet vehicula dolor."
+  },
+  {
+    "id": 1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    "heading": "Product Suggestion",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla et vehicula dolor, sit amet vehicula dolor."
+  },
+  {
+    "id": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    "heading": "Health Graphs & Charts",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla et vehicula dolor, sit amet vehicula dolor."
+  },
+  {
+    "id": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    "heading": "Recommendation System",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus, sed iaculis lacus ullamcorper vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla et vehicula dolor, sit amet vehicula dolor."
+  }
+]

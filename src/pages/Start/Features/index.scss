@@ -1,0 +1,28 @@
+@import '/src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .feature-container {
+    @extend .custom-shadow-outer;
+    @apply grid w-fit grid-cols-2 flex-row items-center justify-start rounded-lg lg:grid-cols-4;
+  }
+
+  .feature-container > :first-child {
+    @apply rounded-tl-lg lg:rounded-l-lg;
+  }
+
+  .feature-container > :nth-child(2) {
+    @apply rounded-tr-lg lg:rounded-none;
+  }
+
+  .feature-container > :nth-child(3) {
+    @apply rounded-bl-lg lg:rounded-none;
+  }
+
+  .feature-container > :last-child {
+    @apply rounded-br-lg lg:rounded-r-lg;
+  }
+}

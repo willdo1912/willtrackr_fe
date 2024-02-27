@@ -1,0 +1,30 @@
+@import '/src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .about-nav-btn > label {
+    @apply flex min-h-8 w-fit flex-row justify-center rounded-xl px-3 py-2 lg:w-32;
+  }
+
+  .about-nav-btn > input[type='radio'] + label {
+    @apply bg-none text-slate-900 shadow-none transition-all duration-100 ease-in-out hover:scale-110 dark:text-white;
+  }
+
+  .about-nav-btn > input[type='radio']:checked + label {
+    @extend .custom-shadow-inner;
+    @apply bg-slate-200 text-slate-900 transition-all duration-500 ease-in-out hover:scale-100 dark:bg-slate-700 dark:text-white;
+  }
+
+  .about-info-container {
+    @extend .custom-shadow-outer;
+    @apply base-bg-normal relative flex w-full flex-col items-start justify-start gap-2 rounded-lg p-2 lg:flex-row;
+  }
+
+  .about-info-content {
+    @extend .custom-shadow-inner;
+    @apply base-bg-off size-full rounded-lg p-2 lg:p-6;
+  }
+}

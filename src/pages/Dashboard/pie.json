@@ -1,0 +1,32 @@
+[
+  {
+    "id": "lisp",
+    "label": "lisp",
+    "value": 596,
+    "color": "hsl(223, 70%, 50%)"
+  },
+  {
+    "id": "stylus",
+    "label": "stylus",
+    "value": 148,
+    "color": "hsl(152, 70%, 50%)"
+  },
+  {
+    "id": "css",
+    "label": "css",
+    "value": 425,
+    "color": "hsl(280, 70%, 50%)"
+  },
+  {
+    "id": "java",
+    "label": "java",
+    "value": 58,
+    "color": "hsl(212, 70%, 50%)"
+  },
+  {
+    "id": "haskell",
+    "label": "haskell",
+    "value": 551,
+    "color": "hsl(337, 70%, 50%)"
+  }
+]

@@ -1,0 +1,91 @@
+@import './base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body :not(path, a) {
+    @extend .base-text-normal;
+  }
+
+  h1 {
+    @apply text-center font-georgia text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-center font-georgia text-3xl font-bold tracking-tighter md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-center font-georgia text-2xl font-bold tracking-tighter md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-center font-poppins text-xl font-semibold tracking-tight md:text-2xl lg:text-3xl;
+  }
+
+  h5 {
+    @apply text-center font-poppins text-base font-semibold tracking-tight md:text-xl lg:text-2xl;
+  }
+
+  div,
+  span,
+  p,
+  input,
+  a {
+    @apply font-inter text-sm font-normal tracking-normal lg:text-base;
+  }
+
+  small,
+  label {
+    @apply font-inter text-xs font-light tracking-wider lg:text-sm;
+  }
+
+  button {
+    @apply z-10 min-h-10 rounded-xl px-3 py-2;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='email'],
+  input[type='phone'],
+  select,
+  textarea {
+    @apply rounded-lg border border-slate-300 bg-slate-50 p-2 text-slate-900 dark:border-slate-600 dark:bg-slate-900 dark:text-white dark:placeholder-slate-400;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='phone'],
+  input[type='email'],
+  select {
+    @apply h-12;
+  }
+
+  a {
+    @apply text-blue-500 underline hover:scale-110 hover:text-blue-700 dark:hover:text-blue-300;
+  }
+}
+
+@layer components {
+  .btn-filled {
+    @apply bg-main-blue px-3 py-2 text-white transition-all duration-300 ease-in-out hover:scale-110 hover:bg-main-dark-blue focus:bg-main-dark-pink active:scale-95 active:bg-main-pink dark:bg-main-dark-blue dark:hover:bg-main-blue dark:focus:bg-main-pink dark:active:bg-main-dark-pink;
+  }
+
+  .btn-outlined {
+    @apply border border-main-blue px-3 py-2 transition-all duration-300 ease-in-out hover:scale-110 hover:bg-slate-200 focus:border-main-pink focus:bg-slate-300 active:scale-95 active:border-main-pink active:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus:bg-slate-600 dark:active:bg-slate-800;
+  }
+
+  .btn-none {
+    @apply text-slate-900 transition-all duration-300 ease-in-out hover:scale-110 hover:bg-slate-200 focus:bg-slate-300 active:scale-95 active:bg-slate-100 dark:text-white dark:hover:bg-slate-700 dark:focus:bg-slate-600 dark:active:bg-slate-800;
+  }
+
+  .base-bg-off .btn-none {
+    @apply text-slate-900 transition-all duration-300 ease-in-out hover:scale-110 hover:bg-slate-100 focus:bg-slate-300 active:scale-95 active:bg-white dark:text-white dark:hover:bg-slate-800 dark:focus:bg-slate-600 dark:active:bg-slate-900;
+  }
+
+  .start-section {
+    @apply flex h-fit w-full flex-col items-center lg:h-[calc(100vh-3.5rem)];
+  }
+}

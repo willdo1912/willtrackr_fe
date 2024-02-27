@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "value": 0,
+    "input": "about-radio-0",
+    "button": "Who we are",
+    "content": "WillTrackr is more than just a health and fitness tracking website; it's your personal wellness partner. Developed by a passionate team blending expertise in technology, healthcare, and fitness, our platform offers a unique, user-centered experience. We focus on providing personalized health insights and actionable fitness recommendations, empowering you to take control of your wellness journey with the latest in digital health technology."
+  },
+  {
+    "id": 1,
+    "value": 1,
+    "input": "about-radio-1",
+    "button": "Our value",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium enim quis quam eleifend condimentum. Fusce sit amet ligula purus. Phasellus vitae nunc nec ipsum molestie fermentum quis ut nulla. Quisque eget augue egestas, semper leo in, consectetur orci. Vivamus scelerisque neque ut felis aliquet rutrum. Suspendisse eleifend arcu sit amet posuere semper. Nulla eget erat ipsum. Suspendisse cursus suscipit suscipit. Fusce commodo mattis ornare. Proin rhoncus ultricies dolor non aliquet. Ut semper purus libero. Donec quis purus id enim consequat dapibus."
+  },
+  {
+    "id": 2,
+    "value": 2,
+    "input": "about-radio-2",
+    "button": "Our team",
+    "content": "Integer aliquam magna felis, eu aliquet urna eleifend posuere. Nulla non eros ut quam iaculis convallis vitae sit amet eros. In laoreet venenatis rhoncus. Etiam volutpat id lectus vel finibus. Suspendisse egestas ante quis ornare egestas. Aenean quis orci viverra, tincidunt nunc in, iaculis est. Nam nec luctus erat. Suspendisse porttitor rutrum pretium. Duis venenatis, nulla in mattis mattis, augue ante consectetur lectus, non tincidunt dolor elit sit amet nibh. Curabitur nec ultrices dolor."
+  }
+]
