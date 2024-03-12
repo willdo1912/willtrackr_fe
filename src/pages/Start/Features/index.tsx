@@ -8,7 +8,14 @@ const Features = () => {
       <h1 className="my-2">OUR FEATURES</h1>
       <div className="feature-container">
         {features.map(feature => (
-          <FeatureCol feature={feature} key={feature.id} />
+          <FeatureCol
+            key={feature.id}
+            id={feature.id}
+            image={feature.image}
+            reversed={feature.reversed}
+            heading={feature.heading}
+            body={feature.body}
+          />
         ))}
       </div>
     </div>

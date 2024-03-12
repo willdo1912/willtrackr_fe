@@ -9,6 +9,10 @@
     @extend .base-text-normal;
   }
 
+  body {
+    @apply size-full;
+  }
+
   h1 {
     @apply text-center font-georgia text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl;
   }
@@ -49,7 +53,8 @@
   input[type='text'],
   input[type='password'],
   input[type='email'],
-  input[type='phone'],
+  input[type='tel'],
+  input[type='number'],
   select,
   textarea {
     @apply rounded-lg border border-slate-300 bg-slate-50 p-2 text-slate-900 dark:border-slate-600 dark:bg-slate-900 dark:text-white dark:placeholder-slate-400;
@@ -57,8 +62,9 @@
 
   input[type='text'],
   input[type='password'],
-  input[type='phone'],
+  input[type='tel'],
   input[type='email'],
+  input[type='number'],
   select {
     @apply h-12;
   }
@@ -70,15 +76,15 @@
 
 @layer components {
   .btn-filled {
-    @apply bg-main-blue px-3 py-2 text-white transition-all duration-300 ease-in-out hover:scale-110 hover:bg-main-dark-blue focus:bg-main-dark-pink active:scale-95 active:bg-main-pink dark:bg-main-dark-blue dark:hover:bg-main-blue dark:focus:bg-main-pink dark:active:bg-main-dark-pink;
+    @apply px-3 py-2 text-white enabled:bg-main-blue enabled:transition-all enabled:duration-300 enabled:ease-in-out enabled:hover:scale-110 enabled:hover:bg-main-dark-blue enabled:focus:bg-main-dark-pink enabled:active:scale-95 enabled:active:bg-main-pink disabled:cursor-not-allowed disabled:bg-slate-500 enabled:dark:bg-main-dark-blue enabled:dark:hover:bg-main-blue enabled:dark:focus:bg-main-pink enabled:dark:active:bg-main-dark-pink;
   }
 
   .btn-outlined {
-    @apply border border-main-blue px-3 py-2 transition-all duration-300 ease-in-out hover:scale-110 hover:bg-slate-200 focus:border-main-pink focus:bg-slate-300 active:scale-95 active:border-main-pink active:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus:bg-slate-600 dark:active:bg-slate-800;
+    @apply border px-3 py-2 enabled:border-main-blue enabled:transition-all enabled:duration-300 enabled:ease-in-out enabled:hover:scale-110 enabled:hover:bg-slate-200 enabled:focus:border-main-pink enabled:focus:bg-slate-300 enabled:active:scale-95 enabled:active:border-main-pink enabled:active:bg-slate-100 disabled:cursor-not-allowed disabled:border-slate-500 disabled:bg-slate-200 disabled:text-slate-500 enabled:dark:bg-slate-800 enabled:dark:hover:bg-slate-700 enabled:dark:focus:bg-slate-600 enabled:dark:active:bg-slate-800 disabled:dark:bg-slate-600;
   }
 
   .btn-none {
-    @apply text-slate-900 transition-all duration-300 ease-in-out hover:scale-110 hover:bg-slate-200 focus:bg-slate-300 active:scale-95 active:bg-slate-100 dark:text-white dark:hover:bg-slate-700 dark:focus:bg-slate-600 dark:active:bg-slate-800;
+    @apply enabled:text-slate-900 enabled:transition-all enabled:duration-300 enabled:ease-in-out enabled:hover:scale-110 enabled:hover:bg-slate-200 enabled:focus:bg-slate-300 enabled:active:scale-95 enabled:active:bg-slate-100 disabled:cursor-not-allowed disabled:bg-slate-500 disabled:opacity-50 enabled:dark:text-white enabled:dark:hover:bg-slate-700 enabled:dark:focus:bg-slate-600 enabled:dark:active:bg-slate-800;
   }
 
   .base-bg-off .btn-none {

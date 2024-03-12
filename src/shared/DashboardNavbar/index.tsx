@@ -9,6 +9,7 @@ import {
 import { useState } from 'react'
 import LightSwitch from '../LightSwitch'
 import logo_sm from '/logo/logo-sm.png'
+import { redirectTo } from 'src/shared/utils'
 
 const DashboardNavbar = () => {
   const [isTooltipOpened, setIsTooltipOpen] = useState(-1)
@@ -23,7 +24,7 @@ const DashboardNavbar = () => {
         className="btn-none"
         onMouseEnter={() => setIsTooltipOpen(0)}
         onMouseLeave={() => setIsTooltipOpen(-1)}
-        onClick={() => (window.location.href = 'http://localhost:5173/dashboard')}
+        onClick={() => redirectTo('/dashboard')}
       >
         <HomeIcon className="h-5 w-5" />
         <div
@@ -37,7 +38,7 @@ const DashboardNavbar = () => {
         className="btn-none"
         onMouseEnter={() => setIsTooltipOpen(1)}
         onMouseLeave={() => setIsTooltipOpen(-1)}
-        onClick={() => (window.location.href = 'http://localhost:5173/attempt')}
+        onClick={() => redirectTo('/attempt')}
       >
         <ClipboardDocumentIcon className="h-5 w-5" />
         <div
@@ -51,7 +52,7 @@ const DashboardNavbar = () => {
         className="btn-none"
         onMouseEnter={() => setIsTooltipOpen(2)}
         onMouseLeave={() => setIsTooltipOpen(-1)}
-        onClick={() => (window.location.href = 'http://localhost:5173/chat')}
+        onClick={() => redirectTo('/chat')}
       >
         <ChatBubbleOvalLeftEllipsisIcon className="h-5 w-5" />
         <div
@@ -64,7 +65,7 @@ const DashboardNavbar = () => {
         className="btn-none"
         onMouseEnter={() => setIsTooltipOpen(3)}
         onMouseLeave={() => setIsTooltipOpen(-1)}
-        onClick={() => (window.location.href = 'http://localhost:5173/profile')}
+        onClick={() => redirectTo('/profile')}
       >
         <UserIcon className="h-5 w-5" />
         <div
@@ -77,7 +78,7 @@ const DashboardNavbar = () => {
         className="btn-none"
         onMouseEnter={() => setIsTooltipOpen(4)}
         onMouseLeave={() => setIsTooltipOpen(-1)}
-        onClick={() => (window.location.href = 'http://localhost:5173/product')}
+        onClick={() => redirectTo('/product')}
       >
         <MagnifyingGlassIcon className="h-5 w-5" />
         <div
@@ -90,7 +91,7 @@ const DashboardNavbar = () => {
         className="btn-none"
         onMouseEnter={() => setIsTooltipOpen(5)}
         onMouseLeave={() => setIsTooltipOpen(-1)}
-        onClick={() => (window.location.href = 'http://localhost:5173')}
+        onClick={() => redirectTo('')}
       >
         <ArrowLeftStartOnRectangleIcon className="h-5 w-5" />
         <div

@@ -1,14 +1,16 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import AppContextWrapper from './stores/app-context-manager.tsx'
+import AllProducts from './pages/AllProducts'
+import Attempt from './pages/Attempt'
+import Chatbot from './pages/Chatbot'
+import DailyForm from './pages/DailyForm'
+import Dashboard from './pages/Dashboard'
+import Login from './pages/Login'
+import Profile from './pages/Profile'
+import Register from './pages/Register'
+import SampleBlog from './pages/SampleBlog'
 import Start from './pages/Start'
-import Login from './pages/Login/index.tsx'
-import Register from './pages/Register/index.tsx'
-import Typeform from './pages/Typeform/index.tsx'
-import Dashboard from './pages/Dashboard/index.tsx'
-import Attempt from './pages/Attempt/index.tsx'
-import Chatbot from './pages/Chatbot/index.tsx'
-import Profile from './pages/Profile/index.tsx'
-import AllProducts from './pages/Products/index.tsx'
+import Typeform from './pages/Typeform'
+import AppContextWrapper from './stores/app-context-manager.tsx'
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/chat" element={<Chatbot />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/product" element={<AllProducts />} />
+          <Route path="/daily" element={<DailyForm />} />
+          <Route path="/blog" element={<SampleBlog />} />
         </Routes>
       </BrowserRouter>
     </AppContextWrapper>

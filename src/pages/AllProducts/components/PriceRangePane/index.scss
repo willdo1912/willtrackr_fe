@@ -1,0 +1,27 @@
+@import '/src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .invisible-range::-webkit-slider-runnable-track {
+    @apply h-0;
+  }
+
+  .invisible-range::-webkit-slider-thumb {
+    @apply cursor-pointer;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  .range-input::-webkit-outer-spin-button,
+  .range-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  .range-input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}

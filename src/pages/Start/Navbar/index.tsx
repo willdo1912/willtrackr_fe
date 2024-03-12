@@ -1,9 +1,12 @@
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/16/solid'
 import { useEffect, useState } from 'react'
 import logo_md from '/logo/logo-color-md.png'
+import { MoveToRefModel } from './models'
+import { redirectTo } from 'src/shared/utils'
 
-const Navbar = () => {
+const Navbar = ({ moveToRef }: MoveToRefModel) => {
   const [hideMenuInMobile, setHideMenuInMobile] = useState(true)
+  const navBtnList = ['Intro', 'About', 'Features', 'Technologies', 'Quote', 'Contact']
 
   useEffect(() => {
     window.addEventListener('resize', () => window.innerWidth >= 960 && setHideMenuInMobile(true))
@@ -11,26 +14,18 @@ const Navbar = () => {
 
   const navList = (
     <>
-      <li>
-        <button className="btn-none w-full">About</button>
-      </li>
-      <li>
-        <button className="btn-none w-full">Features</button>
-      </li>
-      <li>
-        <button className="btn-none w-full">Technologies</button>
-      </li>
-      <li>
-        <button className="btn-none w-full">Quote</button>
-      </li>
-      <li>
-        <button className="btn-none w-full">Contact</button>
-      </li>
+      {navBtnList.map((navBtn, index) => (
+        <li key={index}>
+          <button className="btn-none w-full" onClick={() => moveToRef(index)} id={`nav-btn-${index}`}>
+            {navBtn}
+          </button>
+        </li>
+      ))}
       <div className="flex gap-4">
-        <button className="btn-filled w-full" onClick={() => (window.location.href = 'http://localhost:5173/login')}>
+        <button className="btn-filled w-full" onClick={() => redirectTo('/login')}>
           Login
         </button>
-        <button className="btn-filled w-full" onClick={() => (window.location.href = 'http://localhost:5173/register')}>
+        <button className="btn-filled w-full" onClick={() => redirectTo('/register')}>
           Register
         </button>
       </div>

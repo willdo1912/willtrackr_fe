@@ -1,0 +1,15 @@
+@import 'src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .sort-field > label {
+    @apply text-slate-900 transition-all duration-300 ease-in-out hover:scale-110 hover:rounded hover:bg-slate-200 focus:bg-slate-300 active:scale-95 active:bg-slate-100 dark:text-white dark:hover:bg-slate-700 dark:focus:bg-slate-600 dark:active:bg-slate-800;
+  }
+
+  .disabled-sort-field > label {
+    @apply base-bg-off cursor-not-allowed opacity-50;
+  }
+}

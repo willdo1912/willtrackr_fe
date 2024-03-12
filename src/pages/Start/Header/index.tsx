@@ -10,9 +10,7 @@ const Header = () => {
       </div>
       <div className="text-color-normal flex flex-row items-center gap-4">
         <EnvelopeIcon className="h-5 w-5" />
-        <a href="mailto:contact@willtrackr.com" className="sr-only md:not-sr-only">
-          contact@willtrackr.com
-        </a>
+        <p className="sr-only md:not-sr-only">contact@willtrackr.com</p>
       </div>
       <LightSwitch />
     </header>

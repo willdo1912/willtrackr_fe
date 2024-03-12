@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bot-msg * {
+    @apply text-white;
+  }
+
+  .bot-msg strong {
+    @apply text-yellow-400;
+  }
+
+  .bot-msg em {
+    @apply text-pink-400;
+  }
+
+  .bot-msg code {
+    @apply text-green-400;
+  }
+
+  .bot-msg ul {
+    @apply list-disc;
+  }
+
+  .bot-msg ol {
+    @apply list-decimal;
+  }
+
+  .bot-msg ul li {
+    @apply ml-8;
+  }
+
+  .bot-msg ol li {
+    @apply ml-8;
+  }
+
+  .bot-msg td,
+  th,
+  tr {
+    @apply border border-slate-500 p-2;
+  }
+
+  .bot-msg table {
+    @apply border-collapse border border-slate-500;
+  }
+}

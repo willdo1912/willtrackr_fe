@@ -1,0 +1,47 @@
+@import '/src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .daily-form {
+    @extend .custom-shadow-outer;
+    @apply border-collapse border border-slate-500;
+  }
+
+  .daily-form tr,
+  td,
+  th {
+    @apply h-16 min-h-16 border border-slate-500 p-2 px-4;
+  }
+
+  .daily-form th {
+    @apply bg-main-teal/80 dark:bg-main-teal/80;
+  }
+
+  .daily-form .input-cell {
+    @apply p-0;
+  }
+
+  .daily-form .input-cell input {
+    @extend .base-bg-normal;
+    @apply size-full rounded-none border-none hover:bg-slate-200 dark:hover:bg-slate-700;
+  }
+
+  .daily-form .input-cell input[type='date'] {
+    @apply px-4;
+  }
+
+  .daily-form td p {
+    @apply flex items-center gap-2;
+  }
+
+  .daily-form .section-row {
+    @apply bg-main-blue/40 text-center font-semibold dark:bg-main-blue/40;
+  }
+
+  .daily-form tr {
+    @extend .base-bg-normal;
+  }
+}

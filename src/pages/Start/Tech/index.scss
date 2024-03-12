@@ -7,13 +7,21 @@
     transform: translateX(0);
   }
 
-  100% {
+  50% {
     transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 
 @layer utilities {
   .sliding-container {
-    animation: slide 10s linear infinite;
+    animation: slide 10s ease-in-out infinite;
+  }
+
+  :hover.sliding-container {
+    animation-play-state: paused;
   }
 }

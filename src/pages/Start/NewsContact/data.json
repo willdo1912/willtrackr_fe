@@ -1,36 +1,36 @@
 [
   {
-    "id": 0,
+    "id": "0",
     "image": "https://picsum.photos/id/110/900/600",
     "heading": "Relevant suggestion",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus."
   },
   {
-    "id": 1,
+    "id": "1",
     "image": "https://picsum.photos/id/220/900/600",
     "heading": "Competitive pricing",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus."
   },
   {
-    "id": 2,
+    "id": "2",
     "image": "https://picsum.photos/id/330/900/600",
     "heading": "Excellent customer service okokokok",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus."
   },
   {
-    "id": 4,
+    "id": "4",
     "image": "https://picsum.photos/id/550/900/600",
     "heading": "Interactive UI",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus."
   },
   {
-    "id": 5,
+    "id": "5",
     "image": "https://picsum.photos/id/660/900/600",
     "heading": "Interactive UI",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus."
   },
   {
-    "id": 6,
+    "id": "6",
     "image": "https://picsum.photos/id/770/900/600",
     "heading": "Interactive UI",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate venenatis lectus."

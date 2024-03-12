@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react'
-import { AppContextInf } from './models'
+import { AppContextModel } from './models'
 import { checkLightModeOnStart } from './hooks/checkLightModeOnStart'
 import { handleToggleLightModeOn } from './utils/handleToggleLightModeOn'
 
@@ -7,7 +7,7 @@ interface Props {
   children: React.ReactNode
 }
 
-const AppContext = createContext<AppContextInf>({})
+const AppContext = createContext<AppContextModel>({})
 
 export function useAppContext() {
   return useContext(AppContext)
@@ -15,6 +15,7 @@ export function useAppContext() {
 
 const AppContextWrapper = ({ children }: Props) => {
   const [lightModeOn, setLightModeOn] = useState(!(window.localStorage.getItem('light_mode') === 'dark'))
+  const [queryParam, setQueryParam] = useState({})
 
   checkLightModeOnStart(lightModeOn)
 
@@ -24,7 +25,9 @@ const AppContextWrapper = ({ children }: Props) => {
         lightModeOn,
         toggleLightModeOn: () => {
           handleToggleLightModeOn(lightModeOn, setLightModeOn)
-        }
+        },
+        queryParam,
+        setQueryParam
       }}
     >
       {children}

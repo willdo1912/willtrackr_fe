@@ -59,7 +59,13 @@ const NewsContact = () => {
           </div>
           <div ref={carousel} className="relative z-0 flex gap-8 overflow-hidden scroll-smooth p-4">
             {news.map(newsCard => (
-              <NewsCard newsCard={newsCard} />
+              <NewsCard
+                key={newsCard.id}
+                image={newsCard.image}
+                heading={newsCard.heading}
+                body={newsCard.body}
+                id={newsCard.id}
+              />
             ))}
           </div>
         </div>

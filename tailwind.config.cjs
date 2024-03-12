@@ -19,8 +19,8 @@ module.exports = {
       {
         "main-outer": '0px 8px 4px -5px rgba(0,0,0,0.25), 0px 6px 6px 0px rgba(0,0,0,0.2), 0px 4px 10px 0px rgba(0,0,0,0.16)',
         "main-inner": 'inset 0px 8px 4px -5px rgba(0,0,0,0.25), inset 0px 6px 6px 0px rgba(0,0,0,0.2), inset 0px 4px 10px 0px rgba(0,0,0,0.16)',
-        "main-outer-inverted": '0px 8px 4px -5px rgba(100,100,100,0.25), 0px 6px 6px 0px rgba(100,100,100,0.2), 0px 4px 10px 0px rgba(100,100,100,0.16)',
-        "main-inner-inverted": 'inset 0px 8px 4px -5px rgba(100,100,100,0.25), inset 0px 6px 6px 0px rgba(100,100,100,0.2), inset 0px 4px 10px 0px rgba(100,100,100,0.16)',
+        "main-outer-inverted": '0px 8px 4px -5px rgba(255,255,255,0.25), 0px 6px 6px 0px rgba(255,255,255,0.2), 0px 4px 10px 0px rgba(255,255,255,0.16)',
+        "main-inner-inverted": 'inset 0px 8px 4px -5px rgba(255,255,255,0.25), inset 0px 6px 6px 0px rgba(255,255,255,0.2), inset 0px 4px 10px 0px rgba(255,255,255,0.16)',
       },
       fontFamily:
       {
@@ -30,7 +30,9 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   darkMode: "class",
   important: true
 }

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Most relevant",
+    "param": "title",
+    "order": 1
+  },
+  {
+    "title": "Price low to high",
+    "param": "price",
+    "order": 1
+  },
+  {
+    "title": "Price high to low",
+    "param": "price",
+    "order": -1
+  },
+  {
+    "title": "Top rated",
+    "param": "rating",
+    "order": -1
+  },
+  {
+    "title": "Best seller",
+    "param": "count",
+    "order": -1
+  }
+]

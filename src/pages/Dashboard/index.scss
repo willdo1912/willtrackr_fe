@@ -1,0 +1,26 @@
+@import '/src/base.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .chart-container > div {
+    @extend .custom-shadow-inner;
+    @apply base-bg-normal rounded-lg;
+  }
+
+  .chart-container div,
+  span,
+  strong {
+    @apply base-text-normal #{!important};
+  }
+
+  .chart-container text {
+    fill: #777 !important;
+  }
+
+  .chart-container > div > div > div > div {
+    background: #aaa !important;
+  }
+}

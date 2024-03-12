@@ -1,6 +1,6 @@
 import { FeatureColProps } from './models'
 
-const FeatureCol = ({ feature }: FeatureColProps) => {
+const FeatureCol = (feature: FeatureColProps) => {
   return (
     <div
       className={`flex ${feature.reversed ? 'flex-col-reverse' : 'flex-col'} overflow-hidden transition-all duration-100 ease-in-out hover:scale-105 hover:rounded-lg`}
